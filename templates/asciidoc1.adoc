@@ -1,0 +1,36 @@
+= Mirth Channel Documentation
+
+== Description
+
+[width="100%",options="header"]
+|====================
+| Name |  mcdoc-demo-channel
+| Description | mcdoc-demo-channel description +
+    multiple lines +
+    are possible
+| Id | 91c02c09-3443-4351-9cc3-a0968ef46aca
+| Revision | 42
+| LastModified | 2016-02-08 11:45
+||
+| Enabled | true
+| InitialState | STARTED
+| MC Version | 3.3.1
+|====================
+
+== Schema
+
+[uml,file="channel-diagram.png"]
+--
+@startditaa
+        +----------------+      +------------------------+
+JSON -> | cGRE  o transf1| -+-> | cYEL destination 1     | -> XML
+        |       o transf2|  |   |  o filter1             |
+        |         +------+  |   +------------------------+
+        |         |cBLU  |  |
+        +---------+------+  |   +------------------------+
+                            +-> |      destination 2     | -> JSON
+                                +------------------------+
+
+@endditaa
+--
+

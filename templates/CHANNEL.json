@@ -1,0 +1,121 @@
+{
+	"_version": "3.3.1",
+	"name": "mcdoc-demo-channel",
+	"description": "mcdoc-demo-channel description",
+	"id": "91c02c09-3443-4351-9cc3-a0968ef46aca",
+	"revision": 42,
+	"lastModified": 1453157161294,
+	"enabled": true,
+	"initialState": "initialStateENUM",
+	"pruneMetaDataDays": 15,
+	"pruneContentDays": null,
+	"archiveEnabled": false,
+	"attachmentProperties": {
+		"type": "Regex",
+		"properties": {
+			"regex.mimetype": "",
+			"regex.pattern": ""
+		}
+	},
+	"resourceIds": ["Default Resource", "e2dac9b1-7b5d-478a-811c-5a468041f9c5"],
+	"source": {
+		"metaDataId": 0,
+		"name": "sourceConnector",
+		"transportName": "Channel Reader",
+		"enabled": true,
+		"waitForPrevious": true,
+		"dataType": {
+			"inbound": "JSON",
+			"outbound": "JSON",
+			"batch": {
+				"processBatch": false,
+				"firstResponse": false,
+				"batchScript": "some script"
+			}
+		},
+		"filter": [
+			{
+				"sequenceNumber":0,
+				"name": "Accept message if &quot;a&quot; equals 1",
+				"type": "Rule Builder",
+				"script": "//generated rule builder script...",
+				"operator": "NONE|AND|OR"
+			},
+			{
+				"sequenceNumber":1,
+				"name": "Accept message if &quot;a&quot; equals 1",
+				"type": "JavaScript",
+				"script": "//javascript filter",
+				"operator": "NONE|AND|OR"
+			},	
+			{
+				"sequenceNumber":2,
+				"name": "external.js",
+				"type": "External Script",
+				"script": "C:\Users\aloyse\Desktop\mcDoc\templates\external.js",
+				"operator": "NONE|AND|OR"
+			}		],
+		"transformer": [
+			{
+				"sequenceNumber":0,
+				"name": "be",
+				"type": "Mapper",
+				"script": "//generated mapper script..."
+			},
+			{
+				"sequenceNumber":1,
+				"name": "two (out)",
+				"type": "Message Builder",
+				"script": "//generated builder script..."
+			},
+			{
+				"sequenceNumber":3,
+				"name": "two (out)",
+				"type": "JavaScript",
+				"script": "//javascript transformer"
+			}
+		],
+		"responseVariable": "fromResponseMap"
+	},
+	"destinations": [{
+		"metaDataId": 1,
+		"name": "Destination 1",
+		"transportName": "Channel Writer",
+		"enabled": true,
+		"waitForPrevious": true,
+		"dataType": {
+			"inbound": "JSON",
+			"outbound": "JSON"
+		},
+		"filter": [],
+		"transformer": [],
+		"responseTransformer": [
+			{
+				"sequenceNumber":0,
+				"name": "my xslt response transformer",
+				"type": "XSLT Step",
+				"script": "//generated transformer script..."
+			}
+		]
+	},
+	{
+		"metaDataId": 2,
+		"name": "Destination 2",
+		"transportName": "JavaScript Writer",
+		"enabled": true,
+		"waitForPrevious": true,
+		"dataType": {
+			"inbound": "JSON",
+			"outbound": "JSON"
+		},
+		"filter": [],
+		"transformer": [],
+		"responseTransformer": []
+	}],
+	"scripts": {
+		"preprocessing": "",
+		"postprocessing": "",
+		"deploy": "",
+		"undeploy": ""
+	}
+}

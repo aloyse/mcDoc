@@ -1,0 +1,44 @@
+{
+	"messages" : [{
+			"name" : "Message1"
+		}, {
+			"name" : "Message2",
+			"id" : "act102"
+		}, {
+			"name" : "Message3"
+		}, {
+			"name" : "Message4"
+		}, {
+			"name" : "Message5"
+		}, {
+			"name" : "Message6"
+		}
+	],
+	"messageGroups" : [{
+			"name" : "MessageGroup1",
+			"members" : [
+				"Message1", "Message2", "Message3"
+			]
+		}, {
+			"name" : "MessageGroup2",
+			"members" : [
+				"Message4", "Message5", "Message6"
+			]
+		}, {
+			"name" : "MessageGroup3",
+			"members" : [
+				"Message1", "Message3", "Message5"
+			]
+		}, {
+			"name" : "MessageGroup4",
+			"members" : [
+				"MessageGroup1", "MessageGroup2", "Message1"
+			]
+		}, {
+			"name" : "MessageGroup5",
+			"members" : [
+				"MessageGroup4"
+			]
+		}
+	]
+}

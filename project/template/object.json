@@ -1,0 +1,44 @@
+{
+	"${object}s" : [{
+			"name" : "${objectUCF}1"
+		}, {
+			"name" : "${objectUCF}2",
+			"id" : "act102"
+		}, {
+			"name" : "${objectUCF}3"
+		}, {
+			"name" : "${objectUCF}4"
+		}, {
+			"name" : "${objectUCF}5"
+		}, {
+			"name" : "${objectUCF}6"
+		}
+	],
+	"${object}Groups" : [{
+			"name" : "${objectUCF}Group1",
+			"members" : [
+				"${objectUCF}1", "${objectUCF}2", "${objectUCF}3"
+			]
+		}, {
+			"name" : "${objectUCF}Group2",
+			"members" : [
+				"${objectUCF}4", "${objectUCF}5", "${objectUCF}6"
+			]
+		}, {
+			"name" : "${objectUCF}Group3",
+			"members" : [
+				"${objectUCF}1", "${objectUCF}3", "${objectUCF}5"
+			]
+		}, {
+			"name" : "${objectUCF}Group4",
+			"members" : [
+				"${objectUCF}Group1", "${objectUCF}Group2", "${objectUCF}1"
+			]
+		}, {
+			"name" : "${objectUCF}Group5",
+			"members" : [
+				"${objectUCF}Group4"
+			]
+		}
+	]
+}

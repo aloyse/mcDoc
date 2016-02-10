@@ -1,0 +1,44 @@
+{
+	"connectors" : [{
+			"name" : "Connector1"
+		}, {
+			"name" : "Connector2",
+			"id" : "act102"
+		}, {
+			"name" : "Connector3"
+		}, {
+			"name" : "Connector4"
+		}, {
+			"name" : "Connector5"
+		}, {
+			"name" : "Connector6"
+		}
+	],
+	"connectorGroups" : [{
+			"name" : "ConnectorGroup1",
+			"members" : [
+				"Connector1", "Connector2", "Connector3"
+			]
+		}, {
+			"name" : "ConnectorGroup2",
+			"members" : [
+				"Connector4", "Connector5", "Connector6"
+			]
+		}, {
+			"name" : "ConnectorGroup3",
+			"members" : [
+				"Connector1", "Connector3", "Connector5"
+			]
+		}, {
+			"name" : "ConnectorGroup4",
+			"members" : [
+				"ConnectorGroup1", "ConnectorGroup2", "Connector1"
+			]
+		}, {
+			"name" : "ConnectorGroup5",
+			"members" : [
+				"ConnectorGroup4"
+			]
+		}
+	]
+}

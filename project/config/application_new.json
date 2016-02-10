@@ -1,0 +1,44 @@
+{
+	"applications" : [{
+			"name" : "Application1"
+		}, {
+			"name" : "Application2",
+			"id" : "act102"
+		}, {
+			"name" : "Application3"
+		}, {
+			"name" : "Application4"
+		}, {
+			"name" : "Application5"
+		}, {
+			"name" : "Application6"
+		}
+	],
+	"applicationGroups" : [{
+			"name" : "ApplicationGroup1",
+			"members" : [
+				"Application1", "Application2", "Application3"
+			]
+		}, {
+			"name" : "ApplicationGroup2",
+			"members" : [
+				"Application4", "Application5", "Application6"
+			]
+		}, {
+			"name" : "ApplicationGroup3",
+			"members" : [
+				"Application1", "Application3", "Application5"
+			]
+		}, {
+			"name" : "ApplicationGroup4",
+			"members" : [
+				"ApplicationGroup1", "ApplicationGroup2", "Application1"
+			]
+		}, {
+			"name" : "ApplicationGroup5",
+			"members" : [
+				"ApplicationGroup4"
+			]
+		}
+	]
+}

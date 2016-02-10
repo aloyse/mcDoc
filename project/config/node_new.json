@@ -1,0 +1,44 @@
+{
+	"nodes" : [{
+			"name" : "Node1"
+		}, {
+			"name" : "Node2",
+			"id" : "act102"
+		}, {
+			"name" : "Node3"
+		}, {
+			"name" : "Node4"
+		}, {
+			"name" : "Node5"
+		}, {
+			"name" : "Node6"
+		}
+	],
+	"nodeGroups" : [{
+			"name" : "NodeGroup1",
+			"members" : [
+				"Node1", "Node2", "Node3"
+			]
+		}, {
+			"name" : "NodeGroup2",
+			"members" : [
+				"Node4", "Node5", "Node6"
+			]
+		}, {
+			"name" : "NodeGroup3",
+			"members" : [
+				"Node1", "Node3", "Node5"
+			]
+		}, {
+			"name" : "NodeGroup4",
+			"members" : [
+				"NodeGroup1", "NodeGroup2", "Node1"
+			]
+		}, {
+			"name" : "NodeGroup5",
+			"members" : [
+				"NodeGroup4"
+			]
+		}
+	]
+}

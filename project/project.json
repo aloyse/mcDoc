@@ -1,0 +1,14 @@
+{
+	"name": "Project Dev",
+	"author": "ga",
+	"description": "Development Project",
+	
+	"configDir": "C:/Users/ali/Desktop/mcDoc/project/config/",
+	"temlpateDir": "C:/Users/ali/Desktop/mcDoc/project/template/",
+	"outputDir": "C:/Users/ali/Desktop/mcDoc/project/doc/",
+	"imagesDir": "C:/Users/ali/Desktop/mcDoc/project/doc/img/",
+	
+	"newPostfix": "_new",
+	"proposalPostfix": "_proposal"
+}
+

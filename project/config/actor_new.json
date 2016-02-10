@@ -1,0 +1,44 @@
+{
+	"actors" : [{
+			"name" : "Actor1"
+		}, {
+			"name" : "Actor2",
+			"id" : "act102"
+		}, {
+			"name" : "Actor3"
+		}, {
+			"name" : "Actor4"
+		}, {
+			"name" : "Actor5"
+		}, {
+			"name" : "Actor6"
+		}
+	],
+	"actorGroups" : [{
+			"name" : "ActorGroup1",
+			"members" : [
+				"Actor1", "Actor2", "Actor3"
+			]
+		}, {
+			"name" : "ActorGroup2",
+			"members" : [
+				"Actor4", "Actor5", "Actor6"
+			]
+		}, {
+			"name" : "ActorGroup3",
+			"members" : [
+				"Actor1", "Actor3", "Actor5"
+			]
+		}, {
+			"name" : "ActorGroup4",
+			"members" : [
+				"ActorGroup1", "ActorGroup2", "Actor1"
+			]
+		}, {
+			"name" : "ActorGroup5",
+			"members" : [
+				"ActorGroup4"
+			]
+		}
+	]
+}

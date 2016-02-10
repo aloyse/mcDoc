@@ -1,0 +1,27 @@
+= $project.name
+$project.author
+:encoding: utf-8
+:lang: en
+:toc: left
+:numbered:
+
+$project.description
+
+== Confguration
+
+
+[width="80%"]
+|====================
+| configDir | $project.configDir
+| temlpateDir | $project.temlpateDir
+| outputDir | $project.outputDir
+| imagesDir | $project.imagesDir
+| newPostfix | $project.newPostfix
+| proposalPostfix | $project.proposalPostfix
+|====================
+
+== Groupable Objects
+
+== $grObj list
+
+#foreach $
